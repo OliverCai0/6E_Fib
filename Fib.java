@@ -78,9 +78,9 @@ public class Fib {
               ignore rounding issues.
      */
     public static double fib_Binet( int n) {
-      double goldenRatio = (1 - Math.sqrt(5)) / 2;
-      double otherNum =  1 - goldenRatio;
-      return(Math.pow(goldenRatio, n) - Math.pow(otherNum, n)) / goldenRatio - otherNum;
+      double phi = (1 - Math.sqrt(5)) / 2;
+      double psi =  1 - goldenRatio;
+      return(Math.pow(phi, n) - Math.pow(psi, n)) / phi - psi;
         //return -2; // invalid Fibonacci number
     }
     /* Time complexity:
